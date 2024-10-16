@@ -1,0 +1,19 @@
+import matplotlib.pyplot as graf
+
+turmas = int(input("coloque a quantidade de turmas existentes: "))
+
+armazenador_turma = []
+armazenador_alunos = []
+
+for i in range(turmas):
+  
+  nome_turma = str(input("Digite o nome/ordenagem alfabetica da turma: "))
+  quantidade_de_alunos = int(input("Digite a quantidade de alunos: "))
+  
+  armazenador_turma.append(nome_turma)
+  armazenador_alunos.append(quantidade_de_alunos)
+
+graf.bar(armazenador_turma,armazenador_alunos,color="purple")
+graf.xlabel("turmas")
+graf.ylabel("Quantidade de alunos")
+graf.show()
